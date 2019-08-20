@@ -4,7 +4,7 @@ let spanArray=['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'D
 function engToSpan()
 {
     for(index=0;index< engArray.length; index++){
-        console.log(`The Spanish word for ${engArray[index]}- is ${spanArray[index]}.`);
+        console.log(`The Spanish word for ${engArray[index]} is ${spanArray[index]}.`);
     }
 }
 // function to translate spanish to English
