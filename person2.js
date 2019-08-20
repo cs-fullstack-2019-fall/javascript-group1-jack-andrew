@@ -4,11 +4,11 @@ function menu() {
 
     while (quitKey === false) {
         let userInput = prompt(`Press 1 to list all English to Spanish translations.
-        Press 2 to list all Spanish to English translations.
-        Press 3 to enter a new English translation.
-        Press 4 to enter a new Spanish translation.
-        Press 5 or 'q' to quit.
-        Press 6 to search an English word and find the Spanish equivalent.\n`);
+Press 2 to list all Spanish to English translations.
+Press 3 to enter a new English translation.
+Press 4 to enter a new Spanish translation.
+Press 5 or 'q' to quit.
+Press 6 to search an English word and find the Spanish equivalent.\n`);
 
         if (userInput === "1") {
             engToSpan();
@@ -24,7 +24,9 @@ function menu() {
             quitKey = true
         }
         else if (userInput === "6"){
-
+            //returns the index of the user's input word and puts it into the spanish array
+            let wordInput = engArray.indexOf(prompt("Enter an English word from the list."));
+            alert(`${spanArray[wordInput]} is the Spanish equivalent.`);
         }
     }
 }
