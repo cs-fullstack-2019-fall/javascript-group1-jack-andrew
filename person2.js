@@ -3,7 +3,12 @@ function menu() {
     let quitKey = false;
 
     while (quitKey === false) {
-        let userInput = prompt("Press 1 to list all English to Spanish translations, press 2 to list all Spanish to English translations, press 3 to enter a new English translation, press 4 to enter a new Spanish translation, and press 5 or 'q' to quit.\n");
+        let userInput = prompt(`Press 1 to list all English to Spanish translations.
+        Press 2 to list all Spanish to English translations.
+        Press 3 to enter a new English translation.
+        Press 4 to enter a new Spanish translation.
+        Press 5 or 'q' to quit.
+        Press 6 to search an English word and find the Spanish equivalent.\n`);
 
         if (userInput === "1") {
             engToSpan();
@@ -17,6 +22,9 @@ function menu() {
             engArray.push(prompt("Enter the English equivalent"));
         } else if (userInput === "5" || userInput === "q") {
             quitKey = true
+        }
+        else if (userInput === "6"){
+            
         }
     }
 }
