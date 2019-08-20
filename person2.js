@@ -24,7 +24,7 @@ function menu() {
             quitKey = true
         }
         else if (userInput === "6"){
-            
+
         }
     }
 }
